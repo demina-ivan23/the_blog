@@ -18,7 +18,35 @@
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script>
         $(function () {
-            $(".content").load("html/home.html");
+            const loadContent = () => {
+                let hash = window.location.hash || '#home';
+                switch (hash) {
+                    case '#home':
+                        $(".content").load("html/home.html");
+                        break;
+                    case '#post':
+                        $(".content").load("html/post.html");
+                        break;
+                    case '#projects':
+                        $(".content").load("html/projects.html");
+                        break;
+                    case '#about':
+                        $(".content").load("html/about.html");
+                        break;
+                    case '#newsletter':
+                        $(".content").load("html/newsletter.html");
+                        break;
+                    default:
+                        $(".content").load("html/home.html");
+                        break;
+                }
+            };
+
+            loadContent();
+
+            $(window).on('hashchange', function () {
+                loadContent();
+            });
         });
 
     </script>
@@ -33,10 +61,14 @@
                     Your Name
                 </div>
                 <div class="header__navbar__link-list">
-                    <li class="header__navbar__link-list__element"><a href="#home" class="header__navbar__link-list__element__link active">Home</a></li>
-                    <li class="header__navbar__link-list__element"><a href="#projects" class="header__navbar__link-list__element__link">Projects</a></li>
-                    <li class="header__navbar__link-list__element"><a href="#about" class="header__navbar__link-list__element__link">About</a></li>
-                    <li class="header__navbar__link-list__element"><a href="#newsletter" class="header__navbar__link-list__element__link">Newsletter</a></li>
+                    <li class="header__navbar__link-list__element"><a href="#home"
+                            class="header__navbar__link-list__element__link active" id="home-link">Home</a></li>
+                    <li class="header__navbar__link-list__element"><a href="#projects"
+                            class="header__navbar__link-list__element__link" id="projects-link">Projects</a></li>
+                    <li class="header__navbar__link-list__element"><a href="#about"
+                            class="header__navbar__link-list__element__link" id="about-link">About</a></li>
+                    <li class="header__navbar__link-list__element"><a href=" #newsletter"
+                            class="header__navbar__link-list__element__link" id="newsletter-link">Newsletter</a></li>
                     <div class="header__navbar__link-list__theme-toggle-container">
                         <button>Theme toggle</button>
                     </div>
