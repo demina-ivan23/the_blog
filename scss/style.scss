@@ -227,6 +227,26 @@ body,
             }
         }
 
+        @mixin postThumbnail {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: red;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+            img {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
         .post-tag {
             padding: 4px 9px;
             background-color: #ffffff;
@@ -397,13 +417,7 @@ body,
 
                                     &__thumbnail-container {
                                         grid-row: 1/2;
-
-                                        &__thumbnail {
-                                            background: url('../src/images/recent-post-1-thumbnail.png') no-repeat center;
-                                            background-size: cover;
-                                            width: 100%;
-                                            height: 100%;
-                                        }
+                                        @include postThumbnail();
                                     }
 
                                     &__main-container {
@@ -445,23 +459,18 @@ body,
                             &:nth-child(2) {
                                 grid-row: 1/2;
 
-                                .post__thumbnail-container__thumbnail {
-                                    background: url('../src/images/recent-post-2-thumbnail.png') no-repeat center;
-                                    background-size: cover;
-                                    width: 100%;
-                                    height: 100%;
+                                .post__thumbnail-container {
+                                    @include postThumbnail();
                                 }
+
                             }
 
                             &:nth-child(3) {
                                 grid-column: 2/3;
                                 grid-row: 2/3;
 
-                                .post__thumbnail-container__thumbnail {
-                                    background: url('../src/images/recent-post-3-thumbnail.png') no-repeat center;
-                                    background-size: cover;
-                                    width: 100%;
-                                    height: 100%;
+                                .post__thumbnail-container {
+                                    @include postThumbnail();
                                 }
                             }
 
@@ -478,13 +487,7 @@ body,
 
                                     &__thumbnail-container {
                                         grid-column: 1/2;
-
-                                        &__thumbnail {
-                                            background: url('../src/images/recent-post-4-thumbnail.png') no-repeat center;
-                                            background-size: cover;
-                                            width: 100%;
-                                            height: 100%;
-                                        }
+                                        @include postThumbnail();
                                     }
 
                                     &__main-container {
@@ -590,11 +593,7 @@ body,
                                             &__thumbnail-container {
                                                 grid-column: 1/3;
                                                 grid-row: 1/2;
-
-                                                &__thumbnail {
-                                                    height: 280px;
-
-                                                }
+                                                @include postThumbnail();
                                             }
 
                                             &__main-container {
@@ -641,6 +640,14 @@ body,
                         @media screen and(max-width:1200px) {
                             grid-template-rows: 1fr 1fr 1fr;
                             grid-template-columns: 1fr 1fr;
+
+                            &__post-container {
+                                .post {
+                                    &__thumbnail-container {
+                                        @include postThumbnail();
+                                    }
+                                }
+                            }
                         }
 
                         @media screen and (max-width: 800px) {
@@ -649,6 +656,13 @@ body,
 
                         @media screen and(max-width:750px) {
                             grid-template-columns: 1fr;
+                            &__post-container {
+                                .post {
+                                    &__thumbnail-container {
+                                        @include postThumbnail();
+                                    }
+                                }
+                            }
                         }
 
 
@@ -660,21 +674,24 @@ body,
 
                                 height: 400px;
 
+                                &__thumbnail-container {
+                                    @include postThumbnail();
+
+                                    &__thumbnail {
+                                        height: 180px;
+                                    }
+                                }
+
                                 @media screen and (max-width:750px) {
                                     height: 500px;
 
                                     &__thumbnail-container {
                                         height: 300px;
-
-                                        &__thumbnail {
-                                            height: 300px;
-                                        }
                                     }
                                 }
 
                                 &__thumbnail-container {
                                     grid-row: 1/2;
-
                                     // 
                                 }
 
@@ -684,22 +701,6 @@ body,
                                     @include postMainContent();
                                 }
                             }
-
-                            @for $i from 1 through 6 {
-                                &:nth-child(#{$i}) {
-                                    .post {
-                                        &__thumbnail-container {
-                                            &__thumbnail {
-                                                background: url('../src/images/post-#{$i}-thumbnail.png') no-repeat center;
-                                                background-size: cover;
-                                                width: 100%;
-                                                height: 100%;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-
                         }
                     }
                 }
@@ -851,20 +852,7 @@ body,
 
                                         &__thumbnail-container {
                                             grid-row: 1/2;
-
-                                            &__thumbnail {
-                                                @if ($i <=6) {
-                                                    background: url('../src/images/post-#{$i}-thumbnail.png') no-repeat center;
-                                                }
-
-                                                @else {
-                                                    background: url('../src/images/post-#{$i - 6}-thumbnail.png') no-repeat center;
-                                                }
-
-                                                background-size: cover;
-                                                width: 100%;
-                                                height: 100%;
-                                            }
+                                            @include postThumbnail();
                                         }
 
                                         &__main-container {
@@ -940,12 +928,7 @@ body,
                                     height: 170px;
                                 }
 
-                                &__thumbnail {
-                                    background: url('../src/images/recent-post-4-thumbnail.png') no-repeat center;
-                                    background-size: cover;
-                                    width: 100%;
-                                    height: 100%;
-                                }
+                                @include postThumbnail();
                             }
 
                             &__paragraph-container {
