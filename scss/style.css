@@ -361,6 +361,7 @@ body,
 .main .content .home-container__main .recent-posts__main__post-container:nth-child(1) .post__main-container__headline__text {
   font-size: var(--24-font-size);
   font-weight: 600;
+  width: 90%;
 }
 .main .content .home-container__main .recent-posts__main__post-container:nth-child(1) .post__main-container__headline__link-icon-container__icon {
   width: 100%;
@@ -420,6 +421,7 @@ body,
 .main .content .home-container__main .recent-posts__main__post-container:nth-child(2) .post__main-container__headline__text, .main .content .home-container__main .recent-posts__main__post-container:nth-child(3) .post__main-container__headline__text {
   font-size: var(--24-font-size);
   font-weight: 600;
+  width: 90%;
 }
 .main .content .home-container__main .recent-posts__main__post-container:nth-child(2) .post__main-container__headline__link-icon-container__icon, .main .content .home-container__main .recent-posts__main__post-container:nth-child(3) .post__main-container__headline__link-icon-container__icon {
   width: 100%;
@@ -539,6 +541,7 @@ body,
 .main .content .home-container__main .recent-posts__main__post-container:nth-child(4) .post__main-container__headline__text {
   font-size: var(--24-font-size);
   font-weight: 600;
+  width: 90%;
 }
 .main .content .home-container__main .recent-posts__main__post-container:nth-child(4) .post__main-container__headline__link-icon-container__icon {
   width: 100%;
@@ -926,6 +929,7 @@ body,
 .main .content .home-container__main .all-posts__main__post-container .post__main-container__headline__text {
   font-size: var(--24-font-size);
   font-weight: 600;
+  width: 90%;
 }
 .main .content .home-container__main .all-posts__main__post-container .post__main-container__headline__link-icon-container__icon {
   width: 100%;
@@ -1121,6 +1125,7 @@ body,
 .main .content .post-container__left__content__main__post-container:nth-child(1) .post__main-container__headline__text {
   font-size: var(--24-font-size);
   font-weight: 600;
+  width: 90%;
 }
 .main .content .post-container__left__content__main__post-container:nth-child(1) .post__main-container__headline__link-icon-container__icon {
   width: 100%;
@@ -1194,6 +1199,7 @@ body,
 .main .content .post-container__left__content__main__post-container:nth-child(2) .post__main-container__headline__text {
   font-size: var(--24-font-size);
   font-weight: 600;
+  width: 90%;
 }
 .main .content .post-container__left__content__main__post-container:nth-child(2) .post__main-container__headline__link-icon-container__icon {
   width: 100%;
@@ -1267,6 +1273,7 @@ body,
 .main .content .post-container__left__content__main__post-container:nth-child(3) .post__main-container__headline__text {
   font-size: var(--24-font-size);
   font-weight: 600;
+  width: 90%;
 }
 .main .content .post-container__left__content__main__post-container:nth-child(3) .post__main-container__headline__link-icon-container__icon {
   width: 100%;
@@ -1340,6 +1347,7 @@ body,
 .main .content .post-container__left__content__main__post-container:nth-child(4) .post__main-container__headline__text {
   font-size: var(--24-font-size);
   font-weight: 600;
+  width: 90%;
 }
 .main .content .post-container__left__content__main__post-container:nth-child(4) .post__main-container__headline__link-icon-container__icon {
   width: 100%;
@@ -1413,6 +1421,7 @@ body,
 .main .content .post-container__left__content__main__post-container:nth-child(5) .post__main-container__headline__text {
   font-size: var(--24-font-size);
   font-weight: 600;
+  width: 90%;
 }
 .main .content .post-container__left__content__main__post-container:nth-child(5) .post__main-container__headline__link-icon-container__icon {
   width: 100%;
@@ -1486,6 +1495,7 @@ body,
 .main .content .post-container__left__content__main__post-container:nth-child(6) .post__main-container__headline__text {
   font-size: var(--24-font-size);
   font-weight: 600;
+  width: 90%;
 }
 .main .content .post-container__left__content__main__post-container:nth-child(6) .post__main-container__headline__link-icon-container__icon {
   width: 100%;
@@ -1559,6 +1569,7 @@ body,
 .main .content .post-container__left__content__main__post-container:nth-child(7) .post__main-container__headline__text {
   font-size: var(--24-font-size);
   font-weight: 600;
+  width: 90%;
 }
 .main .content .post-container__left__content__main__post-container:nth-child(7) .post__main-container__headline__link-icon-container__icon {
   width: 100%;
@@ -1632,6 +1643,7 @@ body,
 .main .content .post-container__left__content__main__post-container:nth-child(8) .post__main-container__headline__text {
   font-size: var(--24-font-size);
   font-weight: 600;
+  width: 90%;
 }
 .main .content .post-container__left__content__main__post-container:nth-child(8) .post__main-container__headline__link-icon-container__icon {
   width: 100%;
@@ -1705,6 +1717,7 @@ body,
 .main .content .post-container__left__content__main__post-container:nth-child(9) .post__main-container__headline__text {
   font-size: var(--24-font-size);
   font-weight: 600;
+  width: 90%;
 }
 .main .content .post-container__left__content__main__post-container:nth-child(9) .post__main-container__headline__link-icon-container__icon {
   width: 100%;
@@ -1778,6 +1791,7 @@ body,
 .main .content .post-container__left__content__main__post-container:nth-child(10) .post__main-container__headline__text {
   font-size: var(--24-font-size);
   font-weight: 600;
+  width: 90%;
 }
 .main .content .post-container__left__content__main__post-container:nth-child(10) .post__main-container__headline__link-icon-container__icon {
   width: 100%;
@@ -1851,6 +1865,7 @@ body,
 .main .content .post-container__left__content__main__post-container:nth-child(11) .post__main-container__headline__text {
   font-size: var(--24-font-size);
   font-weight: 600;
+  width: 90%;
 }
 .main .content .post-container__left__content__main__post-container:nth-child(11) .post__main-container__headline__link-icon-container__icon {
   width: 100%;
@@ -1924,6 +1939,7 @@ body,
 .main .content .post-container__left__content__main__post-container:nth-child(12) .post__main-container__headline__text {
   font-size: var(--24-font-size);
   font-weight: 600;
+  width: 90%;
 }
 .main .content .post-container__left__content__main__post-container:nth-child(12) .post__main-container__headline__link-icon-container__icon {
   width: 100%;
