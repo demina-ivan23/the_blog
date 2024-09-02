@@ -161,12 +161,35 @@ body,
 }
 .main .content .post-tag.--purple {
   color: #6941C6;
+  background-color: #F9F5FF;
 }
 .main .content .post-tag.--purple-blue {
   color: #3538CD;
+  background-color: #EEF4FF;
 }
 .main .content .post-tag.--pink-dark {
   color: #C11574;
+  background-color: #FDF2FA;
+}
+.main .content .post-tag.--blue-lightgray {
+  color: #026AA2;
+  background-color: #F0F9FF;
+}
+.main .content .post-tag.--green {
+  color: #027A48;
+  background-color: #ECFDF3;
+}
+.main .content .post-tag.--purple-gray {
+  color: #363F72;
+  background-color: #F8F9FC;
+}
+.main .content .post-tag.--orange {
+  color: #C4320A;
+  background-color: #FFF6ED;
+}
+.main .content .post-tag.--red {
+  color: #C01048;
+  background-color: #FFF1F3;
 }
 .main .content .home-container__header {
   display: flex;
