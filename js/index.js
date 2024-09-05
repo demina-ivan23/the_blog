@@ -3,8 +3,7 @@ const setTheme = () => {
     if (darkThemeOn == "true") {
         document.getElementById('main').classList.add('dark-theme');
         document.getElementById('theme-toggle').checked = true;
-    } else if(darkThemeOn != true) {
-        console.log('hi');
+    } else {
         document.getElementById('main').classList.remove('dark-theme');
         document.getElementById('theme-toggle').checked = false;
     }
