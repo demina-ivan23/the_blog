@@ -54,7 +54,37 @@
 
 <body>
 
-    <main class="main" id="main">
+    <main class="main disabeled" id="main">
+        <div class="burger-menu hidden">
+            <div class="burger-menu__main">
+                <div class="burger-menu__main__name">
+                    Your Name
+                </div>
+                <div class="burger-menu__main__link-list">
+                    <li class="header__navbar__link-list__element"><a href="#home"
+                            class="header__navbar__link-list__element__link" id="home-link">Home</a></li>
+                    <li class="header__navbar__link-list__element"><a href="#projects"
+                            class="header__navbar__link-list__element__link" id="projects-link">Projects</a></li>
+                    <li class="header__navbar__link-list__element"><a href="#about"
+                            class="header__navbar__link-list__element__link" id="about-link">About</a></li>
+                    <li class="header__navbar__link-list__element"><a href=" #newsletter"
+                            class="header__navbar__link-list__element__link" id="newsletter-link">Newsletter</a></li>
+                    <div class="header__navbar__link-list__theme-toggle-container">
+                        <input type="checkbox" role="switch" id="theme-toggle">
+                        <label for="theme-toggle" class="theme-toggle-label">
+                            <img src="src/images/sun.svg" alt="sun img" class="sun">
+                            <img src="src/images/moon.svg" alt="sun img" class="moon">
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="burger-menu__footer" id="burger-close">
+                <div class="burger-menu__footer__cross-container">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
         <section class="header">
             <div class="header__navbar">
                 <div class="header__navbar__name">
@@ -77,7 +107,7 @@
                         </label>
                     </div>
                 </div>
-                <div class="header__navbar__burger-button">
+                <div class="header__navbar__burger-button" id="burger-open">
                     <span></span>
                     <span></span>
                     <span></span>
