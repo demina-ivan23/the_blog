@@ -1447,8 +1447,7 @@ body,
                                     &__submit {
                                         width: 25%;
                                         display: flex;
-                                        justify-content: center;
-                                        padding: 17px 0;
+                                        padding: 17px 14px;
                                         border-radius: 8px;
                                         border: none;
                                         background-color: var(--newsletter-button-color);
@@ -1771,8 +1770,7 @@ body,
                             &__submit {
                                 width: 25%;
                                 display: flex;
-                                justify-content: center;
-                                padding: 17px 0;
+                                padding: 17px 14px;
                                 border-radius: 8px;
                                 border: none;
                                 background-color: var(--newsletter-button-color);
