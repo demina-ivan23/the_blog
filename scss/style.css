@@ -114,6 +114,11 @@ body,
   font-weight: 600;
   font-size: var(--20-font-size);
 }
+@media screen and (max-height: 450px) {
+  .main .burger-menu__main__name {
+    height: 15%;
+  }
+}
 .main .burger-menu__main__link-list {
   margin-top: 10%;
   width: 100%;
@@ -126,6 +131,13 @@ body,
   align-items: center;
   margin-right: 4%;
   list-style: none;
+}
+@media screen and (max-height: 450px) {
+  .main .burger-menu__main__link-list {
+    margin-top: 5%;
+    height: 85%;
+    justify-content: space-between;
+  }
 }
 .main .burger-menu__main__link-list__element__link {
   font-size: var(--20-font-size);
