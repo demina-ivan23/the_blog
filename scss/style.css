@@ -2961,6 +2961,7 @@ body,
 .main .content .post-container__right__content__footer .newsletter .newsletter-form__input-group__submit {
   width: 25%;
   display: flex;
+  justify-content: center;
   padding: 17px 0;
   border-radius: 8px;
   border: none;
@@ -3653,6 +3654,7 @@ body,
 .main .content .newsletter-container__header .newsletter .newsletter-form__input-group__submit {
   width: 25%;
   display: flex;
+  justify-content: center;
   padding: 17px 0;
   border-radius: 8px;
   border: none;
