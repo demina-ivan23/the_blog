@@ -1,0 +1,1 @@
+A simple html & scss project that showcases my skills at building responsive design websites using flexboxes and media queries. For such an outstanding figma design big thanks to Faqih Sopyan, aka @faqihsopyan.
