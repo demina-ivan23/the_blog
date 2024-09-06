@@ -2,7 +2,7 @@
 
 :root {
     // FONT SIZES
-    --14-font-size: 14px;
+    $s14-font-size: 14px;
     --16-font-size: 16px;
     --18-font-size: 18px;
     --20-font-size: 20px;
@@ -40,12 +40,10 @@
 
 }
 
-
-
-
 html {
     scroll-behavior: smooth;
-        &.scroll-disabeled{
+
+    &.scroll-disabeled {
         height: 100%;
         overflow-y: hidden;
     }
@@ -83,17 +81,18 @@ body,
     }
 
     background-color: var(--background-color);
-
-
     color: var(--text-color);
+
     font-family: 'Inter';
 
     display: grid;
     grid-template-columns: 1fr 13fr 1fr;
+
     @media screen and (max-width: 1200px) {
         grid-template-columns: 1fr;
     }
-    .burger-menu{
+
+    .burger-menu {
         position: fixed;
         top: 0;
         right: 0;
@@ -101,16 +100,19 @@ body,
         height: 100%;
         background-color: var(--background-color);
         z-index: 99;
-        transition: all 0.3s ease;
-        &.hidden{
+        transition: height 0.3s ease, background-color 0.3s ease;
+
+        &.hidden {
             height: 0;
             overflow: hidden;
         }
+
         &__main {
             height: 90%;
             max-height: 90%;
             display: flex;
             flex-direction: column;
+
             &__name {
                 width: 100%;
                 height: 30%;
@@ -133,10 +135,12 @@ body,
                 align-items: center;
                 margin-right: 4%;
                 list-style: none;
+
                 &__element {
                     &__link {
                         font-size: var(--20-font-size);
                         color: var(--text-color);
+
                         &.active {
                             font-weight: 600;
                             border-bottom: 1px solid var(--text-color);
@@ -160,7 +164,7 @@ body,
                         display: block;
                         background-color: #090d1f;
                         cursor: pointer;
-                        transition: all 0.3s;
+                        transition: background-color 0.3s, transform 0.3s;
 
                         &::after {
                             content: '';
@@ -171,7 +175,7 @@ body,
                             right: 13px;
                             background-color: #ffffff;
                             border-radius: 180px;
-                            transition: all 0.3s;
+                            transition: background-color 0.3s, transform 0.3s;
                         }
 
                         .sun {
@@ -194,7 +198,7 @@ body,
                     }
 
                     #theme-toggle-burger:checked+.theme-toggle-label:after {
-                        transition: all 0.3s;
+                        transition: background-color 0.3s, transform 0.3s;
                         transform: translateX(-40px);
                         left: 52px;
                         background-color: #090d1f;
@@ -206,33 +210,37 @@ body,
                 }
             }
         }
-        &__footer{
+
+        &__footer {
             height: 10%;
             display: flex;
             justify-content: center;
             align-items: center;
-            &__cross-container{
+
+            &__cross-container {
                 width: 32px;
                 height: 32px;
-                position: relative;
-                span{
-                    position: absolute;
-                    top: 45%;
-                    right: 7%;
-                    height: 3px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            
+                span {
                     width: 27px;
+                    height: 3px;
                     border-radius: 100px;
                     background-color: var(--text-color);
-                    &:nth-child(1){
+                    position: absolute;
+                    transform: rotate(45deg);
+            
+                    &:nth-child(1) {
                         transform: rotate(-45deg);
-                    }
-                    &:nth-child(2){
-                        transform: rotate(45deg);
                     }
                 }
             }
+            
         }
     }
+
     .header {
 
         grid-column: 2/3;
@@ -251,15 +259,11 @@ body,
             justify-content: space-between;
 
             &__name {
-                grid-column-start: 1;
-                grid-column-end: 2;
                 font-weight: 600;
                 font-size: var(--20-font-size);
             }
 
             &__link-list {
-                grid-column-start: 3;
-                grid-column-end: 4;
                 display: flex;
                 justify-content: center;
                 margin-right: 4%;
@@ -282,7 +286,6 @@ body,
 
                 &__theme-toggle-container {
                     margin: 0 3%;
-
                     #theme-toggle {
                         display: none;
                     }
@@ -296,7 +299,8 @@ body,
                         display: block;
                         background-color: #090d1f;
                         cursor: pointer;
-                        transition: all 0.3s;
+                        transition: background-color 0.3s, transform 0.3s;
+
 
                         &::after {
                             content: '';
@@ -412,12 +416,14 @@ body,
                     min-width: 30px;
                     min-height: 30px;
                     position: relative;
+
                     &__icon {
                         position: absolute;
                         top: -40%;
                         right: 0;
                         min-width: 100%;
                         min-height: 100%;
+
                         span {
                             position: absolute;
                             top: 13px;
@@ -434,7 +440,7 @@ body,
                             }
 
                             &:nth-child(3) {
-                                transform:  translateY(-6px) translateX(-2px);
+                                transform: translateY(-6px) translateX(-2px);
                                 width: 14px;
                             }
                         }
@@ -460,6 +466,7 @@ body,
                 display: flex;
                 font-size: var(--14-font-size);
                 flex-wrap: wrap;
+
                 .post-tag {
                     margin-right: 2%;
                     margin-bottom: 2%;
@@ -725,6 +732,7 @@ body,
             background-color: #ffffff;
             border-radius: 25px;
             min-width: fit-content;
+
             &.--purple {
                 color: #6941C6;
                 background-color: #F9F5FF;
