@@ -19,7 +19,7 @@ toggleActiveLinks();
 keepMenuOpen();
 document.getElementById('burger-open').addEventListener('click', openMenu);
 document.getElementById('burger-close').addEventListener('click', closeMenu);
-const links = document.querySelectorAll('.header__navbar__link-list__element__link');
+const links = document.querySelectorAll('.burger-menu__main__link-list__element__link');
 for (let link of links) {
     link.addEventListener('click', closeMenu);
 }
