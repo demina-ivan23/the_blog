@@ -19,6 +19,17 @@ toggleActiveLinks();
 keepMenuOpen();
 document.getElementById('burger-open').addEventListener('click', openMenu);
 document.getElementById('burger-close').addEventListener('click', closeMenu);
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+        closeMenu();
+    }
+});
+
+window.addEventListener('popstate', (event) => {
+    if (event.state && event.state.menu === 'open') {
+        closeMenu();
+    }
+});
 const links = document.querySelectorAll('.burger-menu__main__link-list__element__link');
 for (let link of links) {
     link.addEventListener('click', closeMenu);
