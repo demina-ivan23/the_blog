@@ -22,34 +22,47 @@
                 let hash = window.location.hash || '#home';
                 switch (hash) {
                     case '#home':
-                        $(".content").load("html/home.html");
+                        $(".content").load("html/home.html", () => {
+                            $('html, body').animate({ scrollTop: 0 }, '600ms'); 
+                        });
                         break;
                     case '#post':
-                        $(".content").load("html/post.html");
+                        $(".content").load("html/post.html", () => {
+                            $('html, body').animate({ scrollTop: 0 }, '600ms'); 
+                        });
                         break;
                     case '#projects':
-                        $(".content").load("html/projects.html");
+                        $(".content").load("html/projects.html", () => {
+                            $('html, body').animate({ scrollTop: 0 }, '600ms'); 
+                        });
                         break;
                     case '#about':
-                        $(".content").load("html/about.html");
+                        $(".content").load("html/about.html", () => {
+                            $('html, body').animate({ scrollTop: 0 }, '600ms'); 
+                        });
                         break;
                     case '#newsletter':
-                        $(".content").load("html/newsletter.html");
+                        $(".content").load("html/newsletter.html", () => {
+                            $('html, body').animate({ scrollTop: 0 }, '600ms'); 
+                        });
                         break;
                     default:
-                        $(".content").load("html/home.html");
+                        $(".content").load("html/home.html", () => {
+                            $('html, body').animate({ scrollTop: 0 }, '600ms'); 
+                        });
                         break;
                 }
             };
 
             loadContent();
 
-            $(window).on('hashchange', function () {
+            $(window).on('hashchange', () => {
                 loadContent();
             });
         });
 
     </script>
+
 </head>
 
 <body>
