@@ -132,7 +132,7 @@ body,
                 justify-content: space-evenly;
                 align-items: center;
                 margin-right: 4%;
-
+                list-style: none;
                 &__element {
                     &__link {
                         font-size: var(--20-font-size);
@@ -147,7 +147,7 @@ body,
                 &__theme-toggle-container {
                     margin: 0 3%;
 
-                    #theme-toggle {
+                    #theme-toggle-burger {
                         display: none;
                     }
 
@@ -189,11 +189,11 @@ body,
                         }
                     }
 
-                    #theme-toggle:checked+.theme-toggle-label {
+                    #theme-toggle-burger:checked+.theme-toggle-label {
                         background-color: #ffffff;
                     }
 
-                    #theme-toggle:checked+.theme-toggle-label:after {
+                    #theme-toggle-burger:checked+.theme-toggle-label:after {
                         transition: all 0.3s;
                         transform: translateX(-40px);
                         left: 52px;
