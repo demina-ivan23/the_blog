@@ -1,7 +1,7 @@
 //Imports
-import {setTheme, toggleTheme} from './theme.js';
-import {toggleActiveLinks} from './link-toggle.js';
-import {keepMenuOpen, openMenu, closeMenu} from './burger.js';
+import { setTheme, toggleTheme } from './theme.js';
+import { toggleActiveLinks } from './link-toggle.js';
+import { keepMenuOpen, openMenu, closeMenu } from './burger.js';
 
 //Code execution and listeners attachment
 
@@ -26,14 +26,8 @@ document.addEventListener('keydown', (event) => {
 });
 
 window.addEventListener('popstate', (event) => {
-        closeMenu();
+    closeMenu();
 });
-if(!document.querySelector('.burger-menu').classList.contains('hidden')){   
-    window.addEventListener('beforeunload', (event) => {
-        event.preventDefault;
-        closeMenu();
-    });
-}
 const links = document.querySelectorAll('.burger-menu__main__link-list__element__link');
 for (let link of links) {
     link.addEventListener('click', closeMenu);
